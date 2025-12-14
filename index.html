@@ -822,7 +822,7 @@
         theme:"grid",
         headStyles:{fillColor:[30,144,255]}
       });
-      doc.save("Pharma_Test_Report.pdf");
+      doc.save("Pharmacology Test.pdf");
     };
 
     document.getElementById("excelBtn").onclick = () => {
@@ -835,13 +835,14 @@
       const blob = new Blob([html], {type:'application/vnd.ms-excel'});
       const link = document.createElement("a");
       link.href = URL.createObjectURL(blob);
-      link.download = "Pharma_Test_Result.xls";
+      link.download = "Pharmacology Test.xls";
       link.click();
       setTimeout(()=>URL.revokeObjectURL(link.href),1000);
     };
   </script>
 </body>
 </html>
+
 
 
 
